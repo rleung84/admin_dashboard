@@ -283,7 +283,7 @@ button:last-of-type {
 
 .cards {
     display: grid;
-    grid-template: 175px 175px 175px / 200px 200px;
+    grid-template: 175px 175px 175px / 25vw 25vw;
     gap: 20px;
 }
 
@@ -318,9 +318,9 @@ button:last-of-type {
     flex-direction: column;
     border-radius: 10px;
     background-color: white;
-    width: 250px;
+    width: 15vw;
     height: 300px;
-    padding: 30px 15px;
+    padding: 15px;
     justify-content: space-between;
 }
 
@@ -332,11 +332,17 @@ button:last-of-type {
 
 .announcement {
     border-bottom: 1px solid gray;
-    padding: 10px 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.announcement:first-child {
+    padding-top: 0;
 }
 
 .announcement:last-child {
     border: none;
+    padding-bottom: 0;
 }
 
 .announcement-content {
@@ -352,6 +358,21 @@ button:last-of-type {
 .trends {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    width: 15vw;
+    padding: 15px;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.trend {
+    display: flex;
+}
+
+.trend-description {
+    color: grey;
+    font-size: 12px;
 }
 
 .trends-label {
@@ -359,3 +380,14 @@ button:last-of-type {
     font-weight: bold;
     font-size: 24px;
 }
+
+/* .announcements {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    width: 15vw;
+    height: 300px;
+    padding: 15px 15px;
+    justify-content: space-between;
+} */
